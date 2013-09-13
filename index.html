@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+	<title>Morphed Icons</title>
+</head>
+
+<body>
+	<div id="container">
+		<div id="glyphs">
+			<div class="section">
+				<div class="grid12 firstcol">
+					<h1>Morphed Icons</h1>
+					<p>Unicode entities are included above each glyph to help you insert individual characters into your layout.</p>
+					<div id="glyph_chart">
+
+						<div><p>&amp;#33;</p>&#33;</div>
+						<div><p>&amp;#36;</p>&#36;</div>
+						<div><p>&amp;#37;</p>&#37;</div>
+						<div><p>&amp;#38;</p>&#38;</div>
+						<div><p>&amp;#42;</p>&#42;</div>
+						<div><p>&amp;#43;</p>&#43;</div>
+						<div><p>&amp;#44;</p>&#44;</div>
+						<div><p>&amp;#46;</p>&#46;</div>
+						<div><p>&amp;#47;</p>&#47;</div>
+						<div><p>&amp;#48;</p>&#48;</div>
+						<div><p>&amp;#49;</p>&#49;</div>
+						<div><p>&amp;#50;</p>&#50;</div>
+						<div><p>&amp;#51;</p>&#51;</div>
+						<div><p>&amp;#52;</p>&#52;</div>
+						<div><p>&amp;#53;</p>&#53;</div>
+						<div><p>&amp;#54;</p>&#54;</div>
+						<div><p>&amp;#55;</p>&#55;</div>
+						<div><p>&amp;#56;</p>&#56;</div>
+						<div><p>&amp;#57;</p>&#57;</div>
+						<div><p>&amp;#59;</p>&#59;</div>
+						<div><p>&amp;#61;</p>&#61;</div>
+						<div><p>&amp;#94;</p>&#94;</div>
+						<div><p>&amp;#95;</p>&#95;</div>
+						<div><p>&amp;#97;</p>&#97;</div>
+						<div><p>&amp;#98;</p>&#98;</div>
+						<div><p>&amp;#99;</p>&#99;</div>
+						<div><p>&amp;#100;</p>&#100;</div>
+						<div><p>&amp;#101;</p>&#101;</div>
+						<div><p>&amp;#102;</p>&#102;</div>
+						<div><p>&amp;#103;</p>&#103;</div>
+						<div><p>&amp;#104;</p>&#104;</div>
+						<div><p>&amp;#105;</p>&#105;</div>
+						<div><p>&amp;#106;</p>&#106;</div>
+						<div><p>&amp;#107;</p>&#107;</div>
+						<div><p>&amp;#108;</p>&#108;</div>
+						<div><p>&amp;#109;</p>&#109;</div>
+						<div><p>&amp;#110;</p>&#110;</div>
+						<div><p>&amp;#111;</p>&#111;</div>
+						<div><p>&amp;#112;</p>&#112;</div>
+						<div><p>&amp;#113;</p>&#113;</div>
+						<div><p>&amp;#114;</p>&#114;</div>
+						<div><p>&amp;#115;</p>&#115;</div>
+						<div><p>&amp;#116;</p>&#116;</div>
+						<div><p>&amp;#117;</p>&#117;</div>
+						<div><p>&amp;#118;</p>&#118;</div>
+						<div><p>&amp;#119;</p>&#119;</div>
+						<div><p>&amp;#120;</p>&#120;</div>
+						<div><p>&amp;#121;</p>&#121;</div>
+						<div><p>&amp;#122;</p>&#122;</div>
+						<div><p>&amp;#163;</p>&#163;</div>
+						<div><p>&amp;#57344;</p>&#57344;</div>
+					</div>	
+				</div>
+
+
+			</div>
+		</div>
+		
+		
+		<div id="specs">
+			
+		</div>
+
+		<div id="installing">
+			<div class="section">
+				<div class="grid12 firstcol">
+					<h1>Installing Webfonts</h1>
+					
+					<p>Webfonts are supported by all major browser platforms but not all in the same way. There are currently four different font formats that must be included in order to target all browsers. This includes TTF, WOFF, EOT and SVG.</p>
+					
+					<h2>1. Upload your webfonts</h2>
+					<p>You must upload your webfont kit to your website. They should be in or near the same directory as your CSS files.</p>
+					
+					<h2>2. Include the webfont stylesheet</h2>
+					<p>A special CSS @font-face declaration helps the various browsers select the appropriate font it needs without causing you a bunch of headaches. Learn more about this syntax by reading the <a href="http://www.fontspring.com/blog/further-hardening-of-the-bulletproof-syntax">Fontspring blog post</a> about it. The code for it is as follows:</p>
+
+
+				<code>
+@font-face{ 
+	font-family: 'Morphed';
+	src: url('morphed.eot');
+	src: url('morphed.eot?#iefix') format('embedded-opentype'),
+	url('morphed.woff') format('woff'),
+	url('morphed.ttf') format('truetype'),
+	url('morphed.svg#Morphed') format('svg');
+}
+				</code>
+
+				<p>We've already gone ahead and generated the code for you. All you have to do is link to the stylesheet in your HTML, like this:</p>
+				<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;stylesheet.css&quot; type=&quot;text/css&quot; charset=&quot;utf-8&quot; /&gt;</code>
+
+				<h2>3. Modify your own stylesheet</h2>
+				<p>To take advantage of your new fonts, you must tell your stylesheet to use them. Look at the original @font-face declaration above and find the property called "font-family." The name linked there will be what you use to reference the font. Prepend that webfont name to the font stack in the "font-family" property, inside the selector you want to change. For example:</p>
+				<code>p { font-family: 'Morphed', Arial, sans-serif; }</code>
+
+				<h2>4. Test</h2>
+				<p>Getting webfonts to work cross-browser <em>can</em> be tricky. Use the information in the sidebar to help you if you find that fonts aren't loading in a particular browser.</p>
+			</div>
+		</div>
+
+	</div>
+	
+</div>
+<div id="footer">
+	<p>LICENCE HERE PLEASE</p>
+</div>
+</div>
+</body>
+</html>

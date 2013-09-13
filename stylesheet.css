@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Morphed';
+    src: url('morphed.svg-morphed-font.eot');
+    src: url('morphed.svg-morphed-font.eot?#iefix') format('embedded-opentype'),
+         url('morphed.svg-morphed-font.woff') format('woff'),
+         url('morphed.svg-morphed-font.ttf') format('truetype'),
+         url('morphed.svg-morphed-font.svg#Morphed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	font-family: 'Morphed';
+	color: #FFF;
+	background: rgb(51, 129,193);
+}
+code {
+	color: rgb(51, 129,193);
+	background: rgb(18, 21, 26 );
+	-webkit-border-radius: 3px; 
+  	-moz-border-radius: 3px; 
+	border-radius: 3px;
+}
+h1 {
+	font-size: 666%;
+}
+#glyph_chart div {
+	background: #FFF;
+	width: 2em;
+	height: 1.6em;
+	padding: 1em .2em .2em;
+	margin: 5px;
+	-webkit-border-radius: 4px; 
+  	-moz-border-radius: 4px; 
+	border-radius: 4px;
+	transition: 1s;
+	-webkit-transition: 1s;
+}
+#glyph_chart div:hover {
+	color: rgb(204,1,80);
+	cursor: pointer;
+	transition: 1s;
+	-webkit-transition: 1s;
+}
+#glyph_chart div:hover p {
+	transition: 1s;
+	-webkit-transition: 1s;
+	background: rgb(18, 21, 26 );
+	cursor: pointer;
+}
+#glyph_chart div p {
+	transition: 1s;
+	-webkit-transition: 1s;
+	background: rgb(51, 129,193);
+	width: 90%;
+	font-size: 30%;
+	border: 2px;
+	-webkit-border-radius: 3px; 
+  	-moz-border-radius: 3px; 
+	border-radius: 3px;
+	margin: 4px;
+}
+
+@color1:  rgb(165,185,198);	// greyish light blue
+@color2:  rgb(210,212,213);	// ultra light grey
+@color3:  rgb(166,168,171);	// super light grey
+@color4:  rgb(121,125,130);	// light grey
+@color5:  rgb(77, 81, 88 );	// grey
+@color6:  rgb(55, 60, 67 );	// dark grey
+@color7:  rgb(51, 129,193);	// morpheus blue
+@color8:  rgb(32, 38, 46 );	// super dark grey
+@color9:  rgb(18, 21, 26 );	// ultra dark grey
+@color10: rgb(235,235,235);	// light table grey
